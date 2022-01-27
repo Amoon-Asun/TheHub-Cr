@@ -1,4 +1,3 @@
-
 local checker = Workspace:FindFirstChild("Queue")
 local plyr = game.Players.LocalPlayer;
 local character= plyr.Character
