@@ -2,11 +2,6 @@ local checker = Workspace:FindFirstChild("Queue")
 local plyr = game.Players.LocalPlayer;
 local character= plyr.Character
 local TeleportService = game:GetService("TeleportService")
-local units = {
-    unit1 = "Naruto Sage Of The Six Paths",
-    unit2 = "Enraged Todoroki",
-    unit3 = "Usopp TS"
-}
 repeat
     wait()
 until game:IsLoaded() and game.Players.LocalPlayer ~= nil and game.Players.LocalPlayer.Name ~= nil
