@@ -15,7 +15,7 @@ if checker ~= nil then
          character.HumanoidRootPart.CFrame = place
      end
 --the names of the places--
-local CandyFarm = CFrame.new(-772.78405761719, 13661.497070312, -8380.818359375)
+local CandyFarm = CFrame.new(-779.78405761719, 13661.497070312, -8380.818359375)
 --only copy the name--
 TeleportTo(CandyFarm)--here put the name of the place--
 wait(60)
