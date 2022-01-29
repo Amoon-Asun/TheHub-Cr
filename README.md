@@ -15,16 +15,18 @@ if checker ~= nil then
          character.HumanoidRootPart.CFrame = place
      end
 --the names of the places--
-local CandyFarm = CFrame.new(-779.78405761719, 13661.497070312, -8380.818359375)
+local CandyFarm = CFrame.new(-772.78405761719, 13661.497070312, -8380.818359375)
 --only copy the name--
 TeleportTo(CandyFarm)--here put the name of the place--
 wait(60)
+while true do
 local Servers = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/4996049426/servers/Public?sortOrder=Asc&limit=100"))
+wait()
 for i,v in pairs(Servers.data) do
-    wait(2)
   if v.playing ~= v.maxPlayers then
       game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v.id)
   end
+end
 end
         else
             while true do
