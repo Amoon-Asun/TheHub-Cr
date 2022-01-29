@@ -21,6 +21,7 @@ TeleportTo(CandyFarm)--here put the name of the place--
 wait(60)
 local Servers = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/4996049426/servers/Public?sortOrder=Asc&limit=100"))
 for i,v in pairs(Servers.data) do
+    wait(2)
   if v.playing ~= v.maxPlayers then
       game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v.id)
   end
